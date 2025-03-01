@@ -25,7 +25,7 @@ const AddTeam = () => {
         e.preventDefault();
         
         try {
-            const response = await axios.post('http://localhost:3000/addteamdata', teamData);
+            const response = await axios.post('https://footballscore-8gph.onrender.com/addteamdata', teamData);
             alert(response.data.message || 'Team data added successfully!');
             setTeamData({
              

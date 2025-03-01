@@ -19,7 +19,7 @@ import './win.css';
     }
  
     try {
-      const response = await axios.delete(`http://localhost:3000/teams/delete/${teamName}`);
+      const response = await axios.delete(`https://footballscore-8gph.onrender.com/teams/delete/${teamName}`);
       setMessage({ text: response.data.message, type: 'success' });
       setTeamName(''); // Clear the input field
     } catch (error) {

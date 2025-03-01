@@ -14,7 +14,7 @@ const AverageGoals = () => {
         setLoading(true);
 
         try {
-            const response = await axios.get('http://localhost:3000/api/football/averageGoals', {
+            const response = await axios.get('https://footballscore-8gph.onrender.com/api/football/averageGoals', {
                 params: { Year: year },
             });
             setTeams(response.data.data); // Set the teams data from the API response

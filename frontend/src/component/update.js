@@ -23,7 +23,7 @@ const UpdateTeam = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`http://localhost:3000/teams/update/${teamData.Team}`, teamData);
+            const response = await axios.post(`https://footballscore-8gph.onrender.com/teams/update/${teamData.Team}`, teamData);
             alert(response.data.message || 'Team data updated successfully!');
             setShowData(true); // Show the updated data
         } catch (error) {

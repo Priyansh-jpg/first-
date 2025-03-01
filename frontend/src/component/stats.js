@@ -12,7 +12,7 @@ const Stats = () => {
         setTotals(null);
 
         try {
-            const response = await axios.get('http://localhost:3000/api/football/stats', {
+            const response = await axios.get('https://footballscore-8gph.onrender.com/api/football/stats', {
                 params: { Year },
             });
             // Access the stats from the response

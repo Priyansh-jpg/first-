@@ -14,7 +14,7 @@ const Win = () => {
         setTotals(null);
 
         try {
-            const response = await axios.get('http://localhost:3000/api/football/teams', {
+            const response = await axios.get('https://footballscore-8gph.onrender.com/api/football/teams', {
                 params: { Win: Win },
             });
             setTotals(response.data.data); // Access the correct property
